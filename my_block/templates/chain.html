@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Цепочка блоков</title>
+</head>
+<body>
+    <h1>Цепочка блоков</h1>
+    <ul>
+        {% for block in chain %}
+            <li>Индекс: {{ block.index }}</li>
+            <li>Временная метка: {{ block.timestamp }}</li>
+            <li>Идентификатор: {{ block.id }}</li>
+            <li>Имя: {{ block.name }}</li>
+            <li>Местоположение: {{ block.location }}</li>
+            <li>План: {{ block.plan }}</li>
+            <li>Статус: {{ block.status }}</li>
+            <li>Сотрудник: {{ block.employee }}</li>
+            <li>Доказательство: {{ block.proof }}</li>
+            <li>Предыдущий хэш: {{ block.previous_hash }}</li>
+            <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
